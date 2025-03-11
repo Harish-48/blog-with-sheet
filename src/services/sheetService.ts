@@ -1,7 +1,7 @@
 import { BlogPost, SheetResponse } from '../types';
 
-const API_KEY = 'AIzaSyCT7vIcmf6cogQjohEGE2Cr3pxKvS9xvdU';
-const SHEET_ID = '1DdWDLdQuXrkzewKyDmMz59TMZY92Boq22KlXIYPskn0';
+const API_KEY = 'Your API_Key';//Enter your api inside the -> ''
+const SHEET_ID = 'Your Sheet_ID'; //Enter your sheet id inside the -> ''
 const API_URL = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=${API_KEY}`;
 
 export async function fetchBlogPosts(): Promise<BlogPost[]> {
